@@ -146,7 +146,7 @@ class UserFeedbackService: ObservableObject {
         stepsToReproduce: [String],
         expectedBehavior: String,
         actualBehavior: String,
-        deviceInfo: DeviceInfo
+        deviceInfo: DeviceInfo2
     ) {
         let fullDescription = """
         \(description)
@@ -324,13 +324,13 @@ struct FeedbackAttachment: Identifiable, Codable {
     }
 }
 
-struct DeviceInfo: Codable {
+struct DeviceInfo2: Codable {
     let model: String
     let iOSVersion: String
     let appVersion: String
     
-    static var current: DeviceInfo {
-        return DeviceInfo(
+    static var current: DeviceInfo2 {
+        return DeviceInfo2(
             model: UIDevice.current.model,
             iOSVersion: UIDevice.current.systemVersion,
             appVersion: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"

@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7839BC4B2E68808F00F1F6DD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7839BC4A2E68808F00F1F6DD /* FirebaseMessaging */; };
+		783AF8F42E6880E000EFE0F3 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 783AF8F32E6880E000EFE0F3 /* AppsFlyerLib */; };
+		783AF9212E6887F100EFE0F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783AF9202E6887F100EFE0F3 /* GoogleService-Info.plist */; };
+		783AF92D2E688F5400EFE0F3 /* imagenotificationservice.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 783AF9262E688F5400EFE0F3 /* imagenotificationservice.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		78DC090E2E4B6FA7002ACC80 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78DC090D2E4B6FA7002ACC80 /* Launch Screen.storyboard */; };
 		78DC09102E4B6FD4002ACC80 /* Launch Screen 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78DC090F2E4B6FD4002ACC80 /* Launch Screen 2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		783AF92B2E688F5400EFE0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78B64A782E488FE500AA15D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783AF9252E688F5400EFE0F3;
+			remoteInfo = imagenotificationservice;
+		};
 		78B64A912E488FE700AA15D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78B64A782E488FE500AA15D6 /* Project object */;
@@ -28,7 +39,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		783AF9322E688F5400EFE0F3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				783AF92D2E688F5400EFE0F3 /* imagenotificationservice.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		783AF91F2E68873000EFE0F3 /* Sindikat-DST.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sindikat-DST.entitlements"; sourceTree = "<group>"; };
+		783AF9202E6887F100EFE0F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		783AF9262E688F5400EFE0F3 /* imagenotificationservice.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = imagenotificationservice.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B64A802E488FE500AA15D6 /* DFChickSind_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DFChickSind_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B64A902E488FE700AA15D6 /* DFChickSind_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFChickSind_2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B64A9A2E488FE700AA15D6 /* DFChickSind_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFChickSind_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,9 +64,37 @@
 		78DC090F2E4B6FD4002ACC80 /* Launch Screen 2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen 2.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		783AF92E2E688F5400EFE0F3 /* Exceptions for "imagenotificationservice" folder in "imagenotificationservice" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 783AF9252E688F5400EFE0F3 /* imagenotificationservice */;
+		};
+		78E247B72E68920400A7043C /* Exceptions for "DFChickSind_2" folder in "DFChickSind_2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"DFChickSind-2-Info.plist",
+			);
+			target = 78B64A7F2E488FE500AA15D6 /* DFChickSind_2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		783AF9272E688F5400EFE0F3 /* imagenotificationservice */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				783AF92E2E688F5400EFE0F3 /* Exceptions for "imagenotificationservice" folder in "imagenotificationservice" target */,
+			);
+			path = imagenotificationservice;
+			sourceTree = "<group>";
+		};
 		78B64A822E488FE500AA15D6 /* DFChickSind_2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				78E247B72E68920400A7043C /* Exceptions for "DFChickSind_2" folder in "DFChickSind_2" target */,
+			);
 			path = DFChickSind_2;
 			sourceTree = "<group>";
 		};
@@ -55,10 +111,19 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		783AF9232E688F5400EFE0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78B64A7D2E488FE500AA15D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7839BC4B2E68808F00F1F6DD /* FirebaseMessaging in Frameworks */,
+				783AF8F42E6880E000EFE0F3 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,11 +147,14 @@
 		78B64A772E488FE500AA15D6 = {
 			isa = PBXGroup;
 			children = (
+				783AF91F2E68873000EFE0F3 /* Sindikat-DST.entitlements */,
+				783AF9202E6887F100EFE0F3 /* GoogleService-Info.plist */,
 				78DC090D2E4B6FA7002ACC80 /* Launch Screen.storyboard */,
 				78DC090F2E4B6FD4002ACC80 /* Launch Screen 2.storyboard */,
 				78B64A822E488FE500AA15D6 /* DFChickSind_2 */,
 				78B64A932E488FE700AA15D6 /* DFChickSind_2Tests */,
 				78B64A9D2E488FE700AA15D6 /* DFChickSind_2UITests */,
+				783AF9272E688F5400EFE0F3 /* imagenotificationservice */,
 				78B64A812E488FE500AA15D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +165,7 @@
 				78B64A802E488FE500AA15D6 /* DFChickSind_2.app */,
 				78B64A902E488FE700AA15D6 /* DFChickSind_2Tests.xctest */,
 				78B64A9A2E488FE700AA15D6 /* DFChickSind_2UITests.xctest */,
+				783AF9262E688F5400EFE0F3 /* imagenotificationservice.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +173,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		783AF9252E688F5400EFE0F3 /* imagenotificationservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783AF92F2E688F5400EFE0F3 /* Build configuration list for PBXNativeTarget "imagenotificationservice" */;
+			buildPhases = (
+				783AF9222E688F5400EFE0F3 /* Sources */,
+				783AF9232E688F5400EFE0F3 /* Frameworks */,
+				783AF9242E688F5400EFE0F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				783AF9272E688F5400EFE0F3 /* imagenotificationservice */,
+			);
+			name = imagenotificationservice;
+			packageProductDependencies = (
+			);
+			productName = imagenotificationservice;
+			productReference = 783AF9262E688F5400EFE0F3 /* imagenotificationservice.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		78B64A7F2E488FE500AA15D6 /* DFChickSind_2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78B64AA42E488FE700AA15D6 /* Build configuration list for PBXNativeTarget "DFChickSind_2" */;
@@ -111,16 +202,20 @@
 				78B64A7C2E488FE500AA15D6 /* Sources */,
 				78B64A7D2E488FE500AA15D6 /* Frameworks */,
 				78B64A7E2E488FE500AA15D6 /* Resources */,
+				783AF9322E688F5400EFE0F3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				783AF92C2E688F5400EFE0F3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				78B64A822E488FE500AA15D6 /* DFChickSind_2 */,
 			);
 			name = DFChickSind_2;
 			packageProductDependencies = (
+				7839BC4A2E68808F00F1F6DD /* FirebaseMessaging */,
+				783AF8F32E6880E000EFE0F3 /* AppsFlyerLib */,
 			);
 			productName = DFChickSind_2;
 			productReference = 78B64A802E488FE500AA15D6 /* DFChickSind_2.app */;
@@ -179,9 +274,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					783AF9252E688F5400EFE0F3 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					78B64A7F2E488FE500AA15D6 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -204,6 +302,10 @@
 			);
 			mainGroup = 78B64A772E488FE500AA15D6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7839BC492E68808F00F1F6DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				783AF8F22E6880E000EFE0F3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 78B64A812E488FE500AA15D6 /* Products */;
 			projectDirPath = "";
@@ -212,16 +314,25 @@
 				78B64A7F2E488FE500AA15D6 /* DFChickSind_2 */,
 				78B64A8F2E488FE700AA15D6 /* DFChickSind_2Tests */,
 				78B64A992E488FE700AA15D6 /* DFChickSind_2UITests */,
+				783AF9252E688F5400EFE0F3 /* imagenotificationservice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		783AF9242E688F5400EFE0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78B64A7E2E488FE500AA15D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				78DC090E2E4B6FA7002ACC80 /* Launch Screen.storyboard in Resources */,
+				783AF9212E6887F100EFE0F3 /* GoogleService-Info.plist in Resources */,
 				78DC09102E4B6FD4002ACC80 /* Launch Screen 2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +354,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		783AF9222E688F5400EFE0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78B64A7C2E488FE500AA15D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +385,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		783AF92C2E688F5400EFE0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783AF9252E688F5400EFE0F3 /* imagenotificationservice */;
+			targetProxy = 783AF92B2E688F5400EFE0F3 /* PBXContainerItemProxy */;
+		};
 		78B64A922E488FE700AA15D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 78B64A7F2E488FE500AA15D6 /* DFChickSind_2 */;
@@ -280,6 +403,56 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		783AF9302E688F5400EFE0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = imagenotificationservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = imagenotificationservice;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.l1ngb00str04d.imagenotificationservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		783AF9312E688F5400EFE0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = imagenotificationservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = imagenotificationservice;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.l1ngb00str04d.imagenotificationservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		78B64AA22E488FE700AA15D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -313,6 +486,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Sindikat-DST.entitlements";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -376,6 +550,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Sindikat-DST.entitlements";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -409,6 +584,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DFChickSind_2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DFChickSind-2-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "LinguisticBoost Road";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -421,8 +597,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "IOI.DFChickSind-2";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.l1ngb00str04d;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -444,6 +620,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DFChickSind_2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DFChickSind-2-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "LinguisticBoost Road";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -456,8 +633,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "IOI.DFChickSind-2";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.the.l1ngb00str04d;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -540,6 +717,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		783AF92F2E688F5400EFE0F3 /* Build configuration list for PBXNativeTarget "imagenotificationservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783AF9302E688F5400EFE0F3 /* Debug */,
+				783AF9312E688F5400EFE0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		78B64A7B2E488FE500AA15D6 /* Build configuration list for PBXProject "DFChickSind_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -577,6 +763,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7839BC492E68808F00F1F6DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.2.0;
+			};
+		};
+		783AF8F22E6880E000EFE0F3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7839BC4A2E68808F00F1F6DD /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7839BC492E68808F00F1F6DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		783AF8F32E6880E000EFE0F3 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 783AF8F22E6880E000EFE0F3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78B64A782E488FE500AA15D6 /* Project object */;
 }

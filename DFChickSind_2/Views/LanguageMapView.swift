@@ -1438,7 +1438,7 @@ struct TopicActionButtons: View {
 }
 
 // MARK: - Loading View
-struct LoadingView: View {
+struct LoadingView2: View {
     var body: some View {
         VStack(spacing: Spacing.lg) {
             ProgressView()
